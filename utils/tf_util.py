@@ -159,10 +159,7 @@ def conv2d(inputs,
   biases = _variable_on_cpu(scope+'biases', [num_output_channels],
                                 tf.constant_initializer(0.0))
   outputs = tf.nn.bias_add(outputs, biases)
-  #print kernel
-  #print biases
-  #print outputs
-  bn = None
+    
   if bn:
     outputs = batch_norm_for_conv2d(outputs, is_training,
                                         bn_decay=bn_decay, scope= scope+'bn')
@@ -339,7 +336,6 @@ def fully_connected(inputs,
   biases = _variable_on_cpu(scope+'biases', [num_outputs],
                              tf.constant_initializer(0.0))
   outputs = tf.nn.bias_add(outputs, biases)
-  bn = None 
   if bn:
     outputs = batch_norm_for_fc(outputs, is_training, bn_decay, scope+'bn')
 
