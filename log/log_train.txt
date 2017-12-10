@@ -1,0 +1,11 @@
+Model saved in file: log/model_init.ckpt
+**** EPOCH 000 ****
+----0----
+step 1: loss: 1628.330322
+step 2: loss: 6184.355469
+step 3: loss: 2204.635742
+step 4: loss: 5309.265625
+step 5: loss: 16191945101541376.000000
+step 6: loss: nan
+step 7: loss: nan
+Model saved in file: log/model1.ckpt
